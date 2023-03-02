@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Boss Monster</title>
+  <!-- 
+  <style>
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
+
+    body.debug .row {
+      outline: 2px dashed red;
+      outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style> -->
+
+</head>
+
+<body class="debug container-fluid our-bg our-font">
+  <section class="row">
+    <!-- fighters here -->
+    <div class="col-3 d-flex justify-content-center" id="Slate Slabrock">
+      <div class="our-card">
+        <div class="row">
+          <div class="col-8">
+            <h4>fighter name</h4>
+          </div>
+          <div class="col-4">
+            <img src="fighter-1.png" alt="one cool dude" class="fighters">
+          </div>
+          <div class="col-8">
+            <h4>HP:</h4>
+            <h4>GOLD:</h4>
+            <h4>LVL:</h4>
+          </div>
+          <div class="col-4 stats">
+            <!-- template here -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 d-flex justify-content-center" id="Flint Ironstag">
+      <div class="our-card">
+        <div class="row">
+          <div class="col-8">
+            <h4>fighter name</h4>
+          </div>
+          <div class="col-4">
+            <img src="fighter-2.png" alt="" class="fighters">
+          </div>
+          <div class="col-8">
+            <h4>HP:</h4>
+            <h4>GOLD:</h4>
+            <h4>LVL:</h4>
+          </div>
+          <div class="col-4 stats">
+            <!-- template here -->
+          </div>
+
+          <div class="col-12"></div>
+          <div class="col-12"></div>
+          <div class="col-12"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="row justify-content-center">
+    <!-- boss here -->
+    <div class="col-8">
+      <div class="boss-card">
+        <div class="col-10 text-center">
+          <h1 id="bossHealth">100</h1>
+          <!-- <i class="mdi mdi-heart text-danger display-6"></i>
+          <i class="mdi mdi-heart text-danger display-6"></i>
+          <i class="mdi mdi-heart text-danger display-6"></i>
+          <i class="mdi mdi-heart text-danger display-6"></i>
+          <i class="mdi mdi-heart text-danger display-6"></i>
+          <i class="mdi mdi-heart text-danger display-6"></i>
+          <i class="mdi mdi-heart text-danger display-6"></i>
+          <i class="mdi mdi-heart text-danger display-6"></i>
+          <i class="mdi mdi-heart text-danger display-6"></i>
+          <i class="mdi mdi-heart text-danger display-6"></i>
+          <i class="mdi mdi-heart text-danger display-6"></i> -->
+
+        </div>
+        <div class="col-5 d-flex justify-content-center">
+          <img onclick="attackBoss()" src="The-boss.png" alt="the boss" class="boss-img">
+        </div>
+        <div class="col-8">
+          <h1 class="m-auto text-center our-light-card">THE BOSS</h1>
+        </div>
+        <div class="col-12 text-end">
+          <h1 class="our-light-card d-inline me-2">Level: <span id="bossLevel"></span></h1><!-- boss level here -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="row justify-content-between">
+
+    <div class="col-4 ms-5 our-card">
+      <section class="row">
+        <div class="col-8">
+          <div>
+            <p>BUY POTION</p>
+            <p>BUY SAM</p>
+            <p>BUY JAKE</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="text-end">
+            <p>20G</p>
+            <p>50G</p>
+            <p>1000G</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="col-2 d-flex align-items-end">
+      <div>
+        <div class="our-card text-danger text-center">
+          <h3 onclick="reset()">RESET</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
